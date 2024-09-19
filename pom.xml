@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
+    <groupId>org.capcalculator</groupId>
     <artifactId>cap-calculator</artifactId>
     <version>1.0.12347</version>
 
@@ -50,7 +50,7 @@
         <!-- Replace this UUID with a custom one for your project. This ID is used by the Windows installer system
        to know that an installer is intended to replace/upgrade an earlier version. The easiest thing to do is
        grab a unique UUID via https://www.uuidgenerator.net -->
-        <windows.upgrade.uuid>d5c80fee-157d-11ed-861d-0242ac120002</windows.upgrade.uuid>
+        <windows.upgrade.uuid>66fab37a-bfe9-48ce-9043-3e474b2f6d71</windows.upgrade.uuid>
 
         <!-- Empty properties to skip signing by default. Set with the macos-sign Maven profile -->
         <macos.sign></macos.sign>
@@ -149,6 +149,17 @@
             <artifactId>maven-dependency-plugin</artifactId>
             <version>3.3.0</version>
             <type>maven-plugin</type>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20240303</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
